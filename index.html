@@ -18,21 +18,73 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3 text-center">Work Day Scheduler</h1>
+      <p class="lead text-center">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead text-center"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="time-block row" id="eightA">
+        <div class="hour col-2 col-md-1">8am</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="nineA">
+        <div class="hour col-2 col-md-1">9am</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="tenA">
+        <div class="hour col-2 col-md-1">10am</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="elevenA">
+        <div class="hour col-2 col-md-1 ">11am</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="noon">
+        <div class="hour col-2 col-md-1 ">Noon</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="oneP">
+        <div class="hour col-2 col-md-1">1pm</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="twoP">
+        <div class="hour col-2 col-md-1">2pm</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="threeP">
+        <div class="hour col-2 col-md-1">3pm</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="fourP">
+        <div class="hour col-2 col-md-1">4pm</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
+      <div class="time-block row" id="fiveP">
+        <div class="hour col-2 col-md-1">5pm</div>
+        <div class="description col-8 col-md-10 border-top border-white"></div>
+        <div class="saveBtn col-2 col-md-1 border-top border-white"><i class="fa-solid fa-floppy-disk"></i></div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a1abe8f9f.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
