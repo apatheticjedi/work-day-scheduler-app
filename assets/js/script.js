@@ -4,37 +4,37 @@ var hour = moment().hour();
 // display current day
 $('#currentDay').text(now);
 
-// set description backgroung color
-function checkTime(){
-    $(".description").each(function(){
+// set description background color
+function checkTime() {
+    $(".description").each(function () {
         var id = $(this).attr("id");
 
-        if(id == hour){
+        if (id == hour) {
             $(this).addClass("present");
-        }else if(id < hour){
+        } else if (id < hour) {
             $(this).addClass("past");
-        }else{
+        } else {
             $(this).addClass("future");
         }
     })
 };
 
 // save to localStorage
-$(".saveBtn").click(function(e){
-e.preventDefault();
-var toDo =$(this).siblings('.description')
-.val();
-var time = $(this).siblings('.description')
-.attr('id');
+$(".saveBtn").click(function (e) {
+    e.preventDefault();
+    var toDo = $(this).siblings('.description')
+        .val();
+    var time = $(this).siblings('.description')
+        .attr('id');
 
-localStorage.setItem(time, toDo);
+    localStorage.setItem(time, toDo);
 });
 
 // load from localStorage
-function loadTasks(){
-    for(let i = 8; i < 18; i++){
+function loadTasks() {
+    for (let i = 8; i < 18; i++) {
         var toDo = localStorage.getItem(i);
-        $("#"+i).val(toDo);
+        $("#" + i).val(toDo);
     }
 };
 
