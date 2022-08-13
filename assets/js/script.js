@@ -86,6 +86,23 @@ function checkTime() {
     };
 };
 
+function enterText() {
+    
+}
+
+$(".description").on("click", function() {
+    var text = $(this)
+    .text()
+    .trim();
+
+    var textInput = $("<textarea>")
+    .val(text);
+
+    var saveBtn = $(".saveBtn");
+
+    $(this).replaceWith(textInput);
+});
+
 setInterval(checkTime(), 300000);
 
 checkTime();
