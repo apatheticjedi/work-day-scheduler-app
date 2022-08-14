@@ -22,12 +22,12 @@ function checkTime() {
 // save to localStorage
 $(".saveBtn").click(function (e) {
     e.preventDefault();
-    var toDo = $(this).siblings('.description')
-        .val();
-    var time = $(this).siblings('.description')
-        .attr('id');
+    var toDo = $(this).siblings('.description').val();
+    var time = $(this).siblings('.description').attr('id');
 
-    localStorage.setItem(time, toDo);
+    if (toDo !== "") {
+        localStorage.setItem(time, toDo);
+    };
 });
 
 // load from localStorage
@@ -38,8 +38,8 @@ function loadTasks() {
     }
 };
 
-// check time every 5 minutes
-setInterval(checkTime, 300000);
+// check time every minute
+setInterval(checkTime, 60000);
 
 checkTime();
 loadTasks();

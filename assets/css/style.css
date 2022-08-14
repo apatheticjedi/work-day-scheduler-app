@@ -25,6 +25,10 @@ textarea {
   white-space: pre-wrap;
 }
 
+.container {
+  padding-bottom: 2rem;
+}
+
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -42,6 +46,10 @@ textarea {
   border-top: 1px dashed #000000;
   border-right: 1px solid #000000;
   padding-top: 30px;
+}
+
+#last-hour {
+  border-bottom: 1px dashed #000000;
 }
 
 .past {
