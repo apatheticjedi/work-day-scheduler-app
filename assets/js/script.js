@@ -10,11 +10,17 @@ function checkTime() {
         var id = $(this).attr("id");
 
         if (id == hour) {
-            $(this).addClass("present");
+            $(this)
+                .removeClass("future past")
+                .addClass("present");
         } else if (id < hour) {
-            $(this).addClass("past");
+            $(this)
+                .removeClass("future present")
+                .addClass("past");
         } else {
-            $(this).addClass("future");
+            $(this)
+                .removeClass("past present")
+                .addClass("future");
         }
     })
 };
@@ -25,9 +31,7 @@ $(".saveBtn").click(function (e) {
     var toDo = $(this).siblings('.description').val();
     var time = $(this).siblings('.description').attr('id');
 
-    if (toDo !== "") {
         localStorage.setItem(time, toDo);
-    };
 });
 
 // load from localStorage
